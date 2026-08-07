@@ -1,7 +1,6 @@
 # pharmacy-information-lookup-api
 RESTful API (Java Spring Boot) simulating a pharmacy information system with CRUD endpoints for drug records, prescription validation logic, and relational DB integration.
 
-
 ## Overview
 A RESTful backend service simulating a pharmacy information system. Provides CRUD operations for drug/medication records, prescription validation logic, and integrates with a relational database — reflecting real-world pharmacy and healthcare information system workflows.
 
@@ -23,16 +22,16 @@ A RESTful backend service simulating a pharmacy information system. Provides CRU
 ## Project Structure
 ```
 src/main/java/com/pharmacy/
-  controller/      # REST endpoints
-  service/         # Business logic (validation rules)
-  repository/      # DB access layer
-  model/           # Entity classes (Drug, Prescription, Patient)
-  exception/       # Custom exception handling
+  controller/ # REST endpoints
+  service/ # Business logic (validation rules)
+  repository/ # DB access layer
+  model/ # Entity classes (Drug, Prescription, Patient)
+  exception/ # Custom exception handling
 src/test/java/com/pharmacy/
   ...unit and integration tests
 ```
 
-## API Endpoints (planned)
+## API Endpoints
 - `GET /api/drugs` - list all drugs
 - `GET /api/drugs/{id}` - get drug by ID
 - `POST /api/drugs` - add new drug
@@ -47,8 +46,8 @@ src/test/java/com/pharmacy/
 4. Access API at `http://localhost:8080/api/drugs`
 
 ## Roadmap
-- [ ] Define DB schema (drugs, prescriptions, patients)
-- [ ] Build CRUD endpoints for drug records
-- [ ] Implement prescription validation logic
-- [ ] Add unit/integration tests
+- [x] Define DB schema (drugs, prescriptions, patients)
+- [x] Build CRUD endpoints for drug records
+- [x] Implement prescription validation logic
+- [x] Add unit/integration tests
 - [ ] Write API documentation (Swagger/OpenAPI)
